@@ -1,5 +1,13 @@
 body {
-  background-color: #849d8f;
+  background: url(../img/slider-ice-cream.png) no-repeat center top #849d8f;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .clearfix {
@@ -23,8 +31,7 @@ body {
   left: 27px;
 }
 
-.header-menu {
-  float: left;
+.header-menu.left{
   margin-left: 178px;
   width: 650px;
 }
@@ -37,17 +44,25 @@ body {
 .header-menu a{
   position: relative;
   display: inline-block;
-  padding: 6px 15px;
+  padding: 6px 17px;
   margin-top: 23px;
+  margin-right: 5px;
   color: #fff;
   font: 16px/21px "robotobold", sans-serif;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .header-menu a:hover {
   background-color: #f7f6f3;
   border-radius: 15px;
   color: #333333;
+}
+
+
+.about-company .header-menu a[href="staf.com.ua"] {
+  background-color: #d07058;
+  border-radius: 15px;
 }
 
 .header-menu a:active {
@@ -120,6 +135,7 @@ body {
   margin: 0;
   padding: 0;
   padding: 8px 20px;
+  transition: background-color 0.2s;
 }
 
 .dropdown li:last-of-type a{
@@ -157,9 +173,11 @@ body {
   display: none;
 }
 
-.header-user-block {
+.header-user-block.right {
+  position: absolute;
+  top: 0;
+  right: 27px;
   width: 310px;
-  float: right;
   text-align: right;
   margin-top: 21px;
 }
@@ -229,3 +247,291 @@ body {
   top: auto;
   left: 17px;
 }
+
+.header-user-block a:first-child:hover::before {
+  border-radius: 15px;
+  background: url(../img/sprites.png) no-repeat -37px 8px #fff; 
+}
+
+.header-user-block a:nth-of-type(2):hover::before {
+  background: url(../img/sprites.png) no-repeat -41px -57px; 
+}
+
+.header-user-block a:nth-of-type(2):hover {
+  background-color: #fff; 
+  color: black;
+}
+
+.header-user-block a:nth-of-type(3):hover {
+  background-color: #fff; 
+  color: black;
+}
+
+.header-user-block a:nth-of-type(3):hover::before {
+  background: url(../img/sprites.png) no-repeat -41px -112px; 
+}
+
+.header-user-block>p {
+  position: absolute;
+  right: 35px;
+  top: 65px;
+}
+
+.header-user-block>p {
+  font: 22px"robotoblack", sans-serif;
+  color: #fff;
+}
+
+.header-user-block>p span{
+  font: 14px"robotobold", sans-serif;
+  color: #fff;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider h1 {
+  margin-top: 325px;
+  font: 60px/60px "robotoblack", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 0 1.5em;
+  background: linear-gradient(360deg, #e74a35, #f26843);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  color: #fff;
+  cursor: pointer;
+  align-items: flex-start;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn.btn-content {
+  font: 32px/64px "robotobold", sans-serif;
+  border-radius: 35px;
+  margin: 0 auto;
+}
+
+.btn.btn-content:hover {
+  background: linear-gradient(360deg, #e74a35, #f26843) rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+}
+
+.btn.btn-content:active {
+  background: linear-gradient(180deg, #e74a35, #f26843) rgba(0, 0, 0, 0.07);
+  background-blend-mode: normal;
+  box-shadow: inset 0 2px 2px #942718;
+}
+
+.slider {
+  margin-bottom: 40px;
+}
+
+.slider ul {
+  text-align: left;
+  position: relative;
+}
+
+.slider li {
+  display: inline-block;
+}
+
+.slider button {
+  position: absolute;
+  font-size: 0;
+  border: none;
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: -36px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider button:hover {
+  background-color: #b2c1b7;
+}
+
+.slider li:nth-child(2) button {
+  left: 28px;
+}
+
+.slider li:last-child button{
+  left: 56px;
+}
+
+.benefits {
+  font: 18px "robotobold";
+  color: #fff;
+}
+
+.benefits.left,
+.benefits.right {
+  width: 559px;
+  padding: 22px 18px;
+  background-image: url(../img/rasberry.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-radius: 15px;
+}
+
+.benefits.left {
+  background-image: url(../img/rasberry.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits.right {
+  background-image: url(../img/chocolate.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits.left {
+  margin-right: 28px;
+}
+
+.benefits b {
+  display: block;
+  margin-bottom: 10px;
+  font: 35px "robotobold";
+}
+
+.benefits p {
+  margin-bottom: 43px;
+}
+
+.benefits .btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 30px;
+}
+
+.benefits>div>div {
+  text-align: right;
+}
+
+.benefits .btn:hover {
+  background: linear-gradient(360deg, #e74a35, #f26843) rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+}
+
+.benefits .btn:active {
+  background: linear-gradient(180deg, #e74a35, #f26843) rgba(0, 0, 0, 0.07);
+  background-blend-mode: normal;
+  box-shadow: inset 0 2px 2px #942718;
+}
+
+.products {
+  margin-top: 40px;
+}
+
+.products article{
+  position: relative;
+  width: 267px;
+  margin-right: 26px;
+  float: left;
+}
+
+.products article::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: url(../img/sprites.png) no-repeat -14px -1495px;
+  top: 0px;
+  left: 0px;
+}
+
+.products article:last-child {
+  margin-right: 0;
+}
+
+.price-products {
+  font: 45px/14px "robotobold";
+  color: #fff;
+}
+
+.products-weight {
+  font: 30px/14px "robotobold";
+  color: #fff; 
+}
+
+.products-info {
+  position: absolute;
+  bottom: 145px;
+}
+
+.products h3 {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.products h3 a {
+  color: #fff;
+  text-decoration: none;
+  font: 16px/22px "robotomedium";
+  border-bottom: 1px solid #a9bbb1;
+}
+
+.products h3 a:hover {
+  color: #FFBC6B;
+  border-bottom: 1px solid rgba(255, 172, 71, 0.9);
+}
+
+.products article {
+  padding-bottom: 70px;
+  transition: background-color 0.3s;
+}
+
+.quickview {
+  position: absolute;
+  top: 350px;
+  left: 41px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.quickview a{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 30px;
+  font: 15px/24px "robotobold";
+}
+
+.products .btn:hover {
+  background: linear-gradient(360deg, #e74a35, #f26843) rgba(255, 255, 255, 0.4);
+  background-blend-mode: overlay;
+}
+
+.products .btn:active {
+  background: linear-gradient(180deg, #e74a35, #f26843) rgba(0, 0, 0, 0.07);
+  background-blend-mode: normal;
+  box-shadow: inset 0 2px 2px #942718;
+}
+
+.products article:hover {
+  background-color: rgba(167, 184, 173, 0.4);
+}
+
+.products article:hover .quickview {
+  opacity: 1;
+}
+
+.features.clearfix {
+  padding-top: 1px;
+}
+
+
+
