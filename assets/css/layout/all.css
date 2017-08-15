@@ -10,6 +10,9 @@ Error: Undefined variable: "$logo_color".
 542:   background-color: $logo_color;
 543:   color: $logo_color;
 544: }
+545: 
+546: footer {
+547:   background-color: $logo_color;
 
 Backtrace:
 sass/layout/all.scss:542
@@ -52,17 +55,20 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:46
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:294:in `watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin.rb:109:in `method_missing'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
-C:/Ruby22-x64/bin/sass:23:in `load'
-C:/Ruby22-x64/bin/sass:23:in `<main>'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$logo_color\".\A         on line 542 of sass/layout/all.scss\A \A 537:   font-size: 10px;\A 538:   vertical-align:super;\A 539: }\A 540: \A 541: .contact-information p{\A 542:   background-color: $logo_color;\A 543:   color: $logo_color;\A 544: }"; }
+  content: "Error: Undefined variable: \"$logo_color\".\A         on line 542 of sass/layout/all.scss\A \A 537:   font-size: 10px;\A 538:   vertical-align:super;\A 539: }\A 540: \A 541: .contact-information p{\A 542:   background-color: $logo_color;\A 543:   color: $logo_color;\A 544: }\A 545: \A 546: footer {\A 547:   background-color: $logo_color;"; }
